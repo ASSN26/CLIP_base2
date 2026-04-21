@@ -1,0 +1,47 @@
+# 项目简介
+
+这是一个基于CLIP的基础代码，用于RSITR（RSITMD、RSICD、UCM数据集）或CMITR（Flickr30k、MSCOCO）。
+
+在之前的版本CLIP_base（精简代码和清晰注释）的基础上，CLIP_base2根据使用习惯有以下改进：
+
+1. 支持RSITR（RSITMD、RSICD、UCM数据集）和CMITR（Flickr30k、MSCOCO）。
+2. 提供class CustomCLIP()，默认是基础的CLIP模型，以供更方便地开发。
+3. 将def test()中的相似度矩阵计算由CPU/numpy改为GPU/torch（这导致了轻微的指标差异），并将返回变量由相似度矩阵改为topk索引，以提高效率。
+4. 训练日志文件夹名改为"日期_Rsum值"，非完整训练结果仅有"日期"，以便训练后查找相关结果。
+5. 代码文件夹结构精简为：clip_ori（不常用文件夹）+ train_log（训练日志文件夹）+（常用文件）
+
+
+# 使用方法
+
+1. `config.py` 提供了一个基本配置文件，无需改动其中的内容。  
+2. `train.py` 提供了一个训练文件，修改此处以选择相关数据集，例如：
+
+```python
+from data_RSITR import get_data
+args.data_json = "/.json"
+args.data_img = "images/"
+```
+
+3. `train.py` 提供了修改其它参数的示例，你可以通过修改这些参数进行模型调试、搜参，例如：
+
+```python
+args.lr = 1.0e-5
+```
+
+4. 使用 `python train.py` 或者 `nohup python train.py > log_name.log 2>&1 &` 进行训练，训练后在 `train_log` 里会生成相应的训练日志。  
+5. `model.py` 和 `loss.py` 提供了基础的模型和损失函数，以供开发。
+
+
+# 训练结果
+
+最后，在RTX3090上（ly_clip_38，详细信息见GPU_torch_info.txt和requirements.txt），提供了CLIP_base2的训练结果（详见dataset.log）：
+
+| Dataset  | time   | I2T R@1 | I2T R@5 | I2T R@10 | T2I R@1 | T2I R@5 | T2I R@10 | Rsum    |
+|----------|--------|---------|---------|----------|---------|---------|----------|---------|
+| RSITMD   | 1384s  | 29.20   | 51.77   | 62.39    | 24.96   | 55.49   | 71.73    | 295.531 |
+| RSICD    | 2744s  | 20.86   | 37.42   | 51.33    | 14.25   | 38.26   | 55.65    | 217.768 |
+| UCM      | 559s   | 21.43   | 58.57   | 81.90    | 18.95   | 64.67   | 94.48    | 340.000 |
+| Flickr30k| 8851s  | 88.80   | 98.00   | 99.40    | 76.18   | 93.54   | 96.76    | 552.680 |
+| MSCOCO   | 32895s | 62.32   | 86.30   | 92.24    | 46.80   | 75.80   | 84.97    | 448.436 |
+
+---
