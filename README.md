@@ -28,7 +28,7 @@ args.data_img = "images/"
 args.lr = 1.0e-5
 ```
 
-4. 使用 `python train.py` 或者 `nohup python train.py > log_name.log 2>&1 &` 进行训练，训练后在 `train_log` 里会生成相应的训练日志。  
+4. 使用 `python train.py` 或者 `nohup python train.py > exp_name.log 2>&1 &` 进行训练，训练后在 `train_log` 里会生成相应的训练日志。  
 5. `model.py` 和 `loss.py` 提供了基础的模型和损失函数，以供开发。
 
 
