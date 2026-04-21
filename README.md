@@ -1,12 +1,12 @@
 # 项目简介
 
-这是一个基于CLIP的基础代码，用于RSITR（RSITMD、RSICD、UCM数据集）或CMITR（Flickr30k、MSCOCO）。
+这是一个基于 CLIP 的基础代码，用于 RSITR（RSITMD、RSICD、UCM 数据集）或 CMITR（Flickr30k、MSCOCO 数据集）。
 
-在之前的版本CLIP_base（精简代码和清晰注释）的基础上，CLIP_base2根据使用习惯有以下改进：
+在之前的版本 CLIP_base（精简代码和清晰注释）的基础上，CLIP_base2 根据使用习惯有以下改进：
 
-1. 支持RSITR（RSITMD、RSICD、UCM数据集）和CMITR（Flickr30k、MSCOCO）。
-2. 提供class CustomCLIP()，默认是基础的CLIP模型，以供更方便地开发。
-3. 将def test()中的相似度矩阵计算由CPU/numpy改为GPU/torch（这导致了轻微的指标差异），并将返回变量由相似度矩阵改为topk索引，以提高效率。
+1. 支持 RSITR（RSITMD、RSICD、UCM 数据集）和 CMITR（Flickr30k、MSCOCO 数据集）。
+2. 提供 class CustomCLIP()，默认是基础的 CLIP 模型，以供更方便地开发。
+3. 将 def test() 中的相似度矩阵计算由 CPU/numpy 改为 GPU/torch（这导致了轻微的指标差异），并将返回变量由相似度矩阵改为 topk 索引，以提高效率。
 4. 训练日志文件夹名改为"日期_Rsum值"，非完整训练结果仅有"日期"，以便训练后查找相关结果。
 5. 代码文件夹结构精简为：clip_ori（不常用文件夹）+ train_log（训练日志文件夹）+（常用文件）
 
@@ -34,7 +34,7 @@ args.lr = 1.0e-5
 
 # 训练结果
 
-最后，在RTX3090上（ly_clip_38，详细信息见GPU_torch_info.txt和requirements.txt），提供了CLIP_base2的训练结果（详见dataset.log）：
+最后，在 RTX3090上（ly_clip_38，详细信息见 GPU_torch_info.txt 和 requirements.txt），提供了 CLIP_base2 的训练结果（详见 dataset.log）：
 
 | Dataset  | time   | I2T R@1 | I2T R@5 | I2T R@10 | T2I R@1 | T2I R@5 | T2I R@10 | Rsum    |
 |----------|--------|---------|---------|----------|---------|---------|----------|---------|
