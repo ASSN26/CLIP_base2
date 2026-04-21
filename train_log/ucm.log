@@ -1,0 +1,220 @@
+nohup: ignoring input
+18:27:20 | Params:
+18:27:20 |     batch_size: 32
+18:27:20 |     beta1: 0.9
+18:27:20 |     beta2: 0.98
+18:27:20 |     context_length: 17
+18:27:20 |     data_img: /data2/ly/data/igarss/UCM/UCM_imgs/
+18:27:20 |     data_json: /data2/ly/data/igarss/UCM/dataset.json
+18:27:20 |     epoch_num: 10
+18:27:20 |     eps: 1e-06
+18:27:20 |     exp_name: 2026-04-20-18-27-20
+18:27:20 |     log_file: train_log/2026-04-20-18-27-20
+18:27:20 |     log_level: 20
+18:27:20 |     log_path: train_log/2026-04-20-18-27-20/log.log
+18:27:20 |     lr: 1e-05
+18:27:20 |     num_workers: 4
+18:27:20 |     precision: amp
+18:27:20 |     pretrain: /data2/ly/clip_pretrain/ViT-B-16.pt
+18:27:20 |     print_freq: 5
+18:27:20 |     save_ckpt: False
+18:27:20 |     train_log: train_log/
+18:27:20 |     warmup: 100
+18:27:20 |     wd: 0.001
+18:27:20 | Dataset:
+/data1/soft/Anaconda3-2022.05/envs/ly_clip_38/lib/python3.8/site-packages/torchvision/transforms/transforms.py:280: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+18:27:20 |     train_data: 8400
+18:27:20 |     val_data: 1050
+18:27:21 |     test_data: 1050
+18:27:29 | Start:
+18:27:29 | Epoch 0: ====================================================================================================
+18:27:29 | <Zero-shot Val&Test>
+18:27:32 | val   Image to text: 13.81, 46.19, 64.29
+18:27:32 | val   Text to image: 9.14, 39.52, 66.19
+18:27:32 | val   Now_epoch , rsum:  0, 239.143
+18:27:32 | val   Best_epoch, rsum:  0, 239.143
+18:27:35 | test  Image to text: 9.52, 38.10, 63.81
+18:27:35 | test  Text to image: 9.43, 39.43, 66.95
+18:27:35 | test  Now_epoch , rsum:  0, 227.238
+18:27:35 | test  Best_epoch, rsum:  0, 227.238
+18:27:35 | <Train>
+18:27:35 | Train Epoch: 0 logit_scale 4.605
+18:27:35 | Train Epoch: 0 [0/8400 (0%)]	Time_d,m: 0.318,0.511	Lr: 0.000000	Loss_itc: 1.565895
+18:27:45 | Train Epoch: 0 [1664/8400 (20%)]	Time_d,m: 0.002,0.169	Lr: 0.000005	Loss_itc: 0.790268
+18:27:54 | Train Epoch: 0 [3328/8400 (40%)]	Time_d,m: 0.002,0.181	Lr: 0.000010	Loss_itc: 0.812746
+18:28:04 | Train Epoch: 0 [4992/8400 (60%)]	Time_d,m: 0.002,0.182	Lr: 0.000010	Loss_itc: 1.040719
+18:28:13 | Train Epoch: 0 [6656/8400 (79%)]	Time_d,m: 0.002,0.186	Lr: 0.000010	Loss_itc: 0.530221
+18:28:23 | Train Epoch: 0 [8320/8400 (99%)]	Time_d,m: 0.002,0.171	Lr: 0.000010	Loss_itc: 0.746859
+18:28:23 | <Val&Test>
+18:28:26 | val   Image to text: 18.57, 53.33, 76.19
+18:28:26 | val   Text to image: 19.14, 65.62, 95.05
+18:28:26 | val   Now_epoch , rsum:  0, 327.905
+18:28:26 | val   Best_epoch, rsum:  0, 327.905
+18:28:29 | test  Image to text: 21.43, 58.57, 81.90
+18:28:29 | test  Text to image: 18.95, 64.67, 94.48
+18:28:29 | test  Now_epoch , rsum:  0, 340.000
+18:28:29 | test  Best_epoch, rsum:  0, 340.000
+18:28:29 | Epoch 1: ====================================================================================================
+18:28:29 | <Train>
+18:28:30 | Train Epoch: 1 logit_scale 4.605
+18:28:30 | Train Epoch: 1 [0/8400 (0%)]	Time_d,m: 0.378,0.179	Lr: 0.000010	Loss_itc: 0.734138
+18:28:39 | Train Epoch: 1 [1664/8400 (20%)]	Time_d,m: 0.002,0.181	Lr: 0.000010	Loss_itc: 0.619244
+18:28:49 | Train Epoch: 1 [3328/8400 (40%)]	Time_d,m: 0.002,0.191	Lr: 0.000010	Loss_itc: 0.778236
+18:28:59 | Train Epoch: 1 [4992/8400 (60%)]	Time_d,m: 0.002,0.183	Lr: 0.000010	Loss_itc: 0.498945
+18:29:08 | Train Epoch: 1 [6656/8400 (79%)]	Time_d,m: 0.003,0.189	Lr: 0.000009	Loss_itc: 0.485883
+18:29:18 | Train Epoch: 1 [8320/8400 (99%)]	Time_d,m: 0.002,0.176	Lr: 0.000009	Loss_itc: 0.542465
+18:29:18 | <Val&Test>
+18:29:21 | val   Image to text: 19.52, 60.00, 82.38
+18:29:21 | val   Text to image: 18.76, 67.24, 96.67
+18:29:21 | val   Now_epoch , rsum:  1, 344.571
+18:29:21 | val   Best_epoch, rsum:  1, 344.571
+18:29:24 | test  Image to text: 17.62, 58.10, 82.38
+18:29:24 | test  Text to image: 17.33, 63.52, 95.33
+18:29:24 | test  Now_epoch , rsum:  1, 334.286
+18:29:24 | test  Best_epoch, rsum:  0, 340.000
+18:29:24 | Epoch 2: ====================================================================================================
+18:29:24 | <Train>
+18:29:25 | Train Epoch: 2 logit_scale 4.604
+18:29:25 | Train Epoch: 2 [0/8400 (0%)]	Time_d,m: 0.403,0.174	Lr: 0.000009	Loss_itc: 0.335487
+18:29:35 | Train Epoch: 2 [1664/8400 (20%)]	Time_d,m: 0.002,0.178	Lr: 0.000009	Loss_itc: 0.465606
+18:29:44 | Train Epoch: 2 [3328/8400 (40%)]	Time_d,m: 0.002,0.184	Lr: 0.000009	Loss_itc: 0.639084
+18:29:54 | Train Epoch: 2 [4992/8400 (60%)]	Time_d,m: 0.002,0.187	Lr: 0.000009	Loss_itc: 0.465575
+18:30:04 | Train Epoch: 2 [6656/8400 (79%)]	Time_d,m: 0.002,0.187	Lr: 0.000009	Loss_itc: 0.395730
+18:30:13 | Train Epoch: 2 [8320/8400 (99%)]	Time_d,m: 0.002,0.175	Lr: 0.000008	Loss_itc: 0.579037
+18:30:13 | <Val&Test>
+18:30:16 | val   Image to text: 17.62, 55.24, 80.00
+18:30:16 | val   Text to image: 20.76, 67.05, 96.29
+18:30:16 | val   Now_epoch , rsum:  2, 336.952
+18:30:16 | val   Best_epoch, rsum:  1, 344.571
+18:30:19 | test  Image to text: 20.00, 54.29, 80.00
+18:30:19 | test  Text to image: 17.90, 63.33, 94.29
+18:30:19 | test  Now_epoch , rsum:  2, 329.810
+18:30:19 | test  Best_epoch, rsum:  0, 340.000
+18:30:19 | Epoch 3: ====================================================================================================
+18:30:19 | <Train>
+18:30:20 | Train Epoch: 3 logit_scale 4.604
+18:30:20 | Train Epoch: 3 [0/8400 (0%)]	Time_d,m: 0.433,0.175	Lr: 0.000008	Loss_itc: 0.359657
+18:30:30 | Train Epoch: 3 [1664/8400 (20%)]	Time_d,m: 0.003,0.184	Lr: 0.000008	Loss_itc: 0.384194
+18:30:39 | Train Epoch: 3 [3328/8400 (40%)]	Time_d,m: 0.002,0.187	Lr: 0.000008	Loss_itc: 0.613186
+18:30:49 | Train Epoch: 3 [4992/8400 (60%)]	Time_d,m: 0.002,0.180	Lr: 0.000007	Loss_itc: 0.326406
+18:30:59 | Train Epoch: 3 [6656/8400 (79%)]	Time_d,m: 0.002,0.184	Lr: 0.000007	Loss_itc: 0.586100
+18:31:08 | Train Epoch: 3 [8320/8400 (99%)]	Time_d,m: 0.002,0.174	Lr: 0.000007	Loss_itc: 0.651492
+18:31:09 | <Val&Test>
+18:31:12 | val   Image to text: 18.57, 59.52, 82.86
+18:31:12 | val   Text to image: 20.29, 67.90, 96.67
+18:31:12 | val   Now_epoch , rsum:  3, 345.810
+18:31:12 | val   Best_epoch, rsum:  3, 345.810
+18:31:15 | test  Image to text: 17.62, 56.19, 76.19
+18:31:15 | test  Text to image: 17.52, 60.67, 93.43
+18:31:15 | test  Now_epoch , rsum:  3, 321.619
+18:31:15 | test  Best_epoch, rsum:  0, 340.000
+18:31:15 | Epoch 4: ====================================================================================================
+18:31:15 | <Train>
+18:31:15 | Train Epoch: 4 logit_scale 4.604
+18:31:15 | Train Epoch: 4 [0/8400 (0%)]	Time_d,m: 0.383,0.188	Lr: 0.000007	Loss_itc: 0.453338
+18:31:25 | Train Epoch: 4 [1664/8400 (20%)]	Time_d,m: 0.002,0.184	Lr: 0.000007	Loss_itc: 0.371798
+18:31:35 | Train Epoch: 4 [3328/8400 (40%)]	Time_d,m: 0.002,0.184	Lr: 0.000006	Loss_itc: 0.285336
+18:31:44 | Train Epoch: 4 [4992/8400 (60%)]	Time_d,m: 0.003,0.182	Lr: 0.000006	Loss_itc: 0.493128
+18:31:54 | Train Epoch: 4 [6656/8400 (79%)]	Time_d,m: 0.002,0.184	Lr: 0.000006	Loss_itc: 0.363669
+18:32:04 | Train Epoch: 4 [8320/8400 (99%)]	Time_d,m: 0.002,0.174	Lr: 0.000005	Loss_itc: 0.260448
+18:32:04 | <Val&Test>
+18:32:07 | val   Image to text: 18.10, 53.33, 80.95
+18:32:07 | val   Text to image: 17.71, 66.38, 95.90
+18:32:07 | val   Now_epoch , rsum:  4, 332.381
+18:32:07 | val   Best_epoch, rsum:  3, 345.810
+18:32:10 | test  Image to text: 17.62, 60.00, 83.81
+18:32:10 | test  Text to image: 17.52, 62.86, 92.86
+18:32:10 | test  Now_epoch , rsum:  4, 334.667
+18:32:10 | test  Best_epoch, rsum:  0, 340.000
+18:32:10 | Epoch 5: ====================================================================================================
+18:32:10 | <Train>
+18:32:11 | Train Epoch: 5 logit_scale 4.604
+18:32:11 | Train Epoch: 5 [0/8400 (0%)]	Time_d,m: 0.419,0.169	Lr: 0.000005	Loss_itc: 0.395462
+18:32:20 | Train Epoch: 5 [1664/8400 (20%)]	Time_d,m: 0.002,0.184	Lr: 0.000005	Loss_itc: 0.223274
+18:32:30 | Train Epoch: 5 [3328/8400 (40%)]	Time_d,m: 0.002,0.182	Lr: 0.000005	Loss_itc: 0.302229
+18:32:40 | Train Epoch: 5 [4992/8400 (60%)]	Time_d,m: 0.002,0.184	Lr: 0.000004	Loss_itc: 0.412260
+18:32:49 | Train Epoch: 5 [6656/8400 (79%)]	Time_d,m: 0.002,0.181	Lr: 0.000004	Loss_itc: 0.258114
+18:32:59 | Train Epoch: 5 [8320/8400 (99%)]	Time_d,m: 0.002,0.175	Lr: 0.000004	Loss_itc: 0.477963
+18:32:59 | <Val&Test>
+18:33:02 | val   Image to text: 19.05, 57.62, 83.33
+18:33:02 | val   Text to image: 19.81, 68.38, 96.29
+18:33:02 | val   Now_epoch , rsum:  5, 344.476
+18:33:02 | val   Best_epoch, rsum:  3, 345.810
+18:33:05 | test  Image to text: 17.62, 54.76, 78.57
+18:33:05 | test  Text to image: 17.14, 62.10, 93.81
+18:33:05 | test  Now_epoch , rsum:  5, 324.000
+18:33:05 | test  Best_epoch, rsum:  0, 340.000
+18:33:05 | Epoch 6: ====================================================================================================
+18:33:05 | <Train>
+18:33:06 | Train Epoch: 6 logit_scale 4.604
+18:33:06 | Train Epoch: 6 [0/8400 (0%)]	Time_d,m: 0.547,0.181	Lr: 0.000004	Loss_itc: 0.477810
+18:33:16 | Train Epoch: 6 [1664/8400 (20%)]	Time_d,m: 0.002,0.181	Lr: 0.000003	Loss_itc: 0.350969
+18:33:25 | Train Epoch: 6 [3328/8400 (40%)]	Time_d,m: 0.002,0.184	Lr: 0.000003	Loss_itc: 0.337124
+18:33:35 | Train Epoch: 6 [4992/8400 (60%)]	Time_d,m: 0.003,0.189	Lr: 0.000003	Loss_itc: 0.303853
+18:33:45 | Train Epoch: 6 [6656/8400 (79%)]	Time_d,m: 0.002,0.177	Lr: 0.000002	Loss_itc: 0.401895
+18:33:54 | Train Epoch: 6 [8320/8400 (99%)]	Time_d,m: 0.002,0.178	Lr: 0.000002	Loss_itc: 0.312004
+18:33:55 | <Val&Test>
+18:33:58 | val   Image to text: 22.38, 60.48, 85.24
+18:33:58 | val   Text to image: 20.86, 68.38, 96.48
+18:33:58 | val   Now_epoch , rsum:  6, 353.810
+18:33:58 | val   Best_epoch, rsum:  6, 353.810
+18:34:01 | test  Image to text: 18.57, 57.14, 80.48
+18:34:01 | test  Text to image: 18.00, 63.81, 93.24
+18:34:01 | test  Now_epoch , rsum:  6, 331.238
+18:34:01 | test  Best_epoch, rsum:  0, 340.000
+18:34:01 | Epoch 7: ====================================================================================================
+18:34:01 | <Train>
+18:34:02 | Train Epoch: 7 logit_scale 4.604
+18:34:02 | Train Epoch: 7 [0/8400 (0%)]	Time_d,m: 0.599,0.171	Lr: 0.000002	Loss_itc: 0.346891
+18:34:11 | Train Epoch: 7 [1664/8400 (20%)]	Time_d,m: 0.003,0.182	Lr: 0.000002	Loss_itc: 0.371245
+18:34:21 | Train Epoch: 7 [3328/8400 (40%)]	Time_d,m: 0.002,0.181	Lr: 0.000002	Loss_itc: 0.309002
+18:34:31 | Train Epoch: 7 [4992/8400 (60%)]	Time_d,m: 0.003,0.181	Lr: 0.000001	Loss_itc: 0.366932
+18:34:40 | Train Epoch: 7 [6656/8400 (79%)]	Time_d,m: 0.002,0.179	Lr: 0.000001	Loss_itc: 0.357986
+18:34:50 | Train Epoch: 7 [8320/8400 (99%)]	Time_d,m: 0.002,0.174	Lr: 0.000001	Loss_itc: 0.171719
+18:34:50 | <Val&Test>
+18:34:53 | val   Image to text: 20.00, 60.00, 87.62
+18:34:53 | val   Text to image: 20.95, 68.29, 96.76
+18:34:53 | val   Now_epoch , rsum:  7, 353.619
+18:34:53 | val   Best_epoch, rsum:  6, 353.810
+18:34:56 | test  Image to text: 20.00, 56.67, 79.05
+18:34:56 | test  Text to image: 18.48, 63.71, 93.62
+18:34:56 | test  Now_epoch , rsum:  7, 331.524
+18:34:56 | test  Best_epoch, rsum:  0, 340.000
+18:34:56 | Epoch 8: ====================================================================================================
+18:34:56 | <Train>
+18:34:57 | Train Epoch: 8 logit_scale 4.604
+18:34:57 | Train Epoch: 8 [0/8400 (0%)]	Time_d,m: 0.508,0.174	Lr: 0.000001	Loss_itc: 0.467751
+18:35:07 | Train Epoch: 8 [1664/8400 (20%)]	Time_d,m: 0.002,0.185	Lr: 0.000001	Loss_itc: 0.280461
+18:35:16 | Train Epoch: 8 [3328/8400 (40%)]	Time_d,m: 0.002,0.186	Lr: 0.000001	Loss_itc: 0.391417
+18:35:26 | Train Epoch: 8 [4992/8400 (60%)]	Time_d,m: 0.002,0.184	Lr: 0.000001	Loss_itc: 0.276242
+18:35:36 | Train Epoch: 8 [6656/8400 (79%)]	Time_d,m: 0.002,0.176	Lr: 0.000000	Loss_itc: 0.158034
+18:35:46 | Train Epoch: 8 [8320/8400 (99%)]	Time_d,m: 0.002,0.176	Lr: 0.000000	Loss_itc: 0.372335
+18:35:46 | <Val&Test>
+18:35:49 | val   Image to text: 17.62, 60.95, 86.19
+18:35:49 | val   Text to image: 21.24, 68.10, 96.00
+18:35:49 | val   Now_epoch , rsum:  8, 350.095
+18:35:49 | val   Best_epoch, rsum:  6, 353.810
+18:35:52 | test  Image to text: 18.10, 53.33, 79.05
+18:35:52 | test  Text to image: 18.00, 63.24, 93.43
+18:35:52 | test  Now_epoch , rsum:  8, 325.143
+18:35:52 | test  Best_epoch, rsum:  0, 340.000
+18:35:52 | Epoch 9: ====================================================================================================
+18:35:52 | <Train>
+18:35:53 | Train Epoch: 9 logit_scale 4.604
+18:35:53 | Train Epoch: 9 [0/8400 (0%)]	Time_d,m: 0.511,0.201	Lr: 0.000000	Loss_itc: 0.491271
+18:36:03 | Train Epoch: 9 [1664/8400 (20%)]	Time_d,m: 0.002,0.182	Lr: 0.000000	Loss_itc: 0.440027
+18:36:12 | Train Epoch: 9 [3328/8400 (40%)]	Time_d,m: 0.002,0.187	Lr: 0.000000	Loss_itc: 0.295033
+18:36:22 | Train Epoch: 9 [4992/8400 (60%)]	Time_d,m: 0.002,0.181	Lr: 0.000000	Loss_itc: 0.419049
+18:36:32 | Train Epoch: 9 [6656/8400 (79%)]	Time_d,m: 0.002,0.182	Lr: 0.000000	Loss_itc: 0.415710
+18:36:41 | Train Epoch: 9 [8320/8400 (99%)]	Time_d,m: 0.002,0.174	Lr: 0.000000	Loss_itc: 0.176403
+18:36:42 | <Val&Test>
+18:36:45 | val   Image to text: 19.05, 60.00, 88.10
+18:36:45 | val   Text to image: 20.86, 68.00, 96.00
+18:36:45 | val   Now_epoch , rsum:  9, 352.000
+18:36:45 | val   Best_epoch, rsum:  6, 353.810
+18:36:48 | test  Image to text: 18.10, 53.33, 79.52
+18:36:48 | test  Text to image: 18.19, 63.52, 93.52
+18:36:48 | test  Now_epoch , rsum:  9, 326.190
+18:36:48 | test  Best_epoch, rsum:  0, 340.000
+All_time:  559.4031674861908
