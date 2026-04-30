@@ -7,7 +7,7 @@ def parse_args():
     # 配置参数
     parser.add_argument("--train_log",
                         type=str,
-                        default="train_log/",
+                        default="outputs/",
                         help="file of save train config-result",)
     parser.add_argument("--exp_name",
                         type=str,
