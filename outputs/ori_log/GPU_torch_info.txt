@@ -1,0 +1,61 @@
+PyTorch version: 1.9.1+cu111
+Is debug build: False
+CUDA used to build PyTorch: 11.1
+ROCM used to build PyTorch: N/A
+
+OS: Ubuntu 20.04.3 LTS (x86_64)
+GCC version: (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
+Clang version: 10.0.0-4ubuntu1 
+CMake version: version 3.29.2
+Libc version: glibc-2.31
+
+Python version: 3.8 (64-bit runtime)
+Python platform: Linux-5.11.0-27-generic-x86_64-with-glibc2.10
+Is CUDA available: True
+CUDA runtime version: 12.8.61
+GPU models and configuration: 
+GPU 0: NVIDIA GeForce RTX 3090
+GPU 1: NVIDIA GeForce RTX 3090
+GPU 2: NVIDIA GeForce RTX 3090
+GPU 3: NVIDIA GeForce RTX 3090
+GPU 4: NVIDIA GeForce RTX 3090
+GPU 5: NVIDIA GeForce RTX 3090
+GPU 6: NVIDIA GeForce RTX 3090
+GPU 7: NVIDIA GeForce RTX 3090
+
+Nvidia driver version: 580.119.02
+cuDNN version: Probably one of the following:
+/usr/local/cuda-11.2/targets/x86_64-linux/lib/libcudnn.so.8
+/usr/local/cuda-11.2/targets/x86_64-linux/lib/libcudnn_adv_infer.so.8
+/usr/local/cuda-11.2/targets/x86_64-linux/lib/libcudnn_adv_train.so.8
+/usr/local/cuda-11.2/targets/x86_64-linux/lib/libcudnn_cnn_infer.so.8
+/usr/local/cuda-11.2/targets/x86_64-linux/lib/libcudnn_cnn_train.so.8
+/usr/local/cuda-11.2/targets/x86_64-linux/lib/libcudnn_ops_infer.so.8
+/usr/local/cuda-11.2/targets/x86_64-linux/lib/libcudnn_ops_train.so.8
+/usr/local/cuda-11.7/targets/x86_64-linux/lib/libcudnn.so.8
+/usr/local/cuda-11.7/targets/x86_64-linux/lib/libcudnn_adv_infer.so.8
+/usr/local/cuda-11.7/targets/x86_64-linux/lib/libcudnn_adv_train.so.8
+/usr/local/cuda-11.7/targets/x86_64-linux/lib/libcudnn_cnn_infer.so.8
+/usr/local/cuda-11.7/targets/x86_64-linux/lib/libcudnn_cnn_train.so.8
+/usr/local/cuda-11.7/targets/x86_64-linux/lib/libcudnn_ops_infer.so.8
+/usr/local/cuda-11.7/targets/x86_64-linux/lib/libcudnn_ops_train.so.8
+HIP runtime version: N/A
+MIOpen runtime version: N/A
+
+Versions of relevant libraries:
+[pip3] numpy==1.24.3
+[pip3] torch==1.9.1+cu111
+[pip3] torchaudio==0.9.1
+[pip3] torchtext==0.10.0
+[pip3] torchvision==0.10.1+cu111
+[conda] blas                      1.0                         mkl    defaults
+[conda] mkl                       2021.4.0           h06a4308_640    defaults
+[conda] mkl-service               2.4.0            py38h7f8727e_0    defaults
+[conda] mkl_fft                   1.3.1            py38hd3c417c_0    defaults
+[conda] mkl_random                1.2.2            py38h51133e4_0    defaults
+[conda] numpy                     1.24.4                   pypi_0    pypi
+[conda] numpy-base                1.24.3           py38h31eccc5_0    defaults
+[conda] torch                     1.9.1+cu111              pypi_0    pypi
+[conda] torchaudio                0.9.1                    pypi_0    pypi
+[conda] torchtext                 0.10.0                   pypi_0    pypi
+[conda] torchvision               0.10.1+cu111             pypi_0    pypi
