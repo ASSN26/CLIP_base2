@@ -8,7 +8,7 @@
 2. 提供 class CustomCLIP()，默认是基础的 CLIP 模型，以供更方便地开发。
 3. 将 def test() 中的相似度矩阵计算由 CPU/numpy 改为 GPU/torch（这导致了轻微的指标差异），并将返回变量由相似度矩阵改为 topk 索引，以提高效率。
 4. 训练日志文件夹名改为"日期_Rsum值"，非完整训练结果仅有"日期"，以便训练后查找相关结果。
-5. 代码文件夹结构精简为：clip_ori（不常用文件夹）+ train_log（训练日志文件夹）+（常用文件）
+5. 代码文件夹结构精简为：clip_ori（不常用文件夹）+ outputs（训练输出文件夹）+（常用文件）
 
 
 # 使用方法
@@ -28,7 +28,7 @@ args.data_img = "images/"
 args.lr = 1.0e-5
 ```
 
-4. 使用 `python train.py` 或者 `nohup python train.py > exp_name.log 2>&1 &` 进行训练，训练后在 `train_log` 里会生成相应的训练日志。  
+4. 使用 `python train.py` 或者 `nohup python train.py > exp_name.log 2>&1 &` 进行训练，训练后在 `outputs` 里会生成相应的训练日志。  
 5. `model.py` 和 `loss.py` 提供了基础的模型和损失函数，以供开发。
 
 
